@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+<input/>
+
+<button>Veja se você acertou    </button>
+
+
+<script>
+
+function pulaLinha(){
+
+    document.write("<br>");
+    document.write("<br>");
+
+}
+
+function print(escrever){
+
+    document.write(escrever);
+    pulaLinha();
+
+}
+
+var numero = Math.round(Math.random()*10);
+var input = document.querySelector("input")
+
+function verifica() {
+
+    if (input.value == numero){
+        alert("Parabéns você acertou, o número que eu estava pensando era: " + numero);
+    } else {
+        alert("Puts cara você errou.... +  o número correto era: " + numero);
+    }
+    input.value = ""
+    input.focus()
+}
+
+var button = document.querySelector("button")
+
+button.onclick = verifica
+
+</script>

@@ -1,0 +1,49 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulaLinha(){
+
+    document.write("<br>");
+    document.write("<br>");
+
+}
+
+function print(escrever){
+
+    document.write(escrever);
+    pulaLinha();
+
+}
+
+function IMC (peso, altura){
+
+    var imcFormula = peso/(altura*altura);
+    return imcFormula;
+
+}
+
+
+var nome = prompt("Qual o seu nome? ")
+var alturaInformada = prompt(nome + " informe a sua altura...");
+var pesoInformado = prompt(nome + " informe o seu peso");
+
+var imc = IMC(pesoInformado, alturaInformada);
+
+print(nome + " seu IMC é: " + imc);
+
+if (imc < 18.5 ){
+    print("Seu IMC está baixo");
+}
+
+if (imc > 35){
+    print("Seu IMC está alto");
+}
+
+if ( 18.5 < imc < 35){
+    print("Seu IMC está bom....")
+}
+
+
+
+</script>

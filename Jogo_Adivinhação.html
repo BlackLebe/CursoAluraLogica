@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulaLinha(){
+
+    document.write("<br>");
+    document.write("<br>");
+
+}
+
+function print(escrever){
+
+    document.write(escrever);
+    pulaLinha();
+
+}
+
+var numero = Math.round(Math.random()*10);
+var chute = parseInt(prompt("Adivinhe o número que eu estou pensando"));
+
+if (chute == numero){
+    print("Parabéns você acertou, o número que eu estava pensando era: " + numero);
+} else {
+    print("Puts cara você errou...." + "<br>" +  "o número correto era: " + numero);
+}
+
+</script>

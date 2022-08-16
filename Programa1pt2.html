@@ -1,0 +1,28 @@
+<meta charset="UTF - 8">
+
+<script>
+
+    var ano = 2016;
+
+    var anonascimento = 1977;
+    //var anonascimento2 = 1996; tentando substituir e colocar tudo em uma única variável
+    //var anonascimento3 = 1976;
+
+    var idade = ano - anonascimento;
+    //indicar a idade de Flávio
+    document.write("Flávio tem " + (idade) + " anos" + "<br>")
+//mudo o valor da variável anonascimento e repito o valor da variável idade(porque aparentemente o computador é burro)
+    anonascimento = 1996;
+    idadeJ = ano - anonascimento;
+	//para que eu possa ter uma idade diferente para Joaquim e Barney
+    document.write("Joaquim tem " + (idadeJ) + " anos" + "<br>");
+//mesma coisa aqui
+    anonascimento = 1976;
+    idadeB = ano - anonascimento;
+
+    document.write("Barney tem " + (idadeB) + " anos" + "<br>");
+
+    document.write("a soma das idades é " + (idade + idadeJ + idadeB) + "<br>")
+	document.write("a Média das idades é " + (idade + idadeJ + idadeB)/3 + "<br>")
+
+    </script>

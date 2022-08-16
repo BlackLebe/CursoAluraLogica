@@ -1,0 +1,67 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulaLinha(){
+
+    document.write("<br>");
+    document.write("<br>");
+
+}
+
+function print(escrever){
+
+    document.write(escrever);
+    pulaLinha();
+
+}
+
+function IMC (peso, altura){
+
+    var imcFormula = peso/(altura*altura);
+    return imcFormula;
+
+}
+
+/* 
+    MÉTODO ANTIGO
+
+var pesoCalebe = 90.8;
+var alturaCalebe = 1.86;
+
+//var imcCalebe = pesoCalebe/(alturaCalebe * alturaCalebe);
+
+//print("o IMC do Calebe é: " + Math.round(imcCalebe));
+
+//var pesoAmigo = 68;
+//var alturaAmigo = 1.72;
+
+//var imcAmigo = pesoAmigo/(alturaAmigo*alturaAmigo);
+
+print("o IMC do meu Amigo é: " + Math.round(imcAmigo)); essa é a forma antiga que eu fazia
+*/
+
+/*
+    MÉTODO ANTIGO SEM PROMPT
+var ImcCalebe = IMC(90.8, 1.86);
+
+var ImcAmigo = IMC(68, 1.72);
+
+print("o IMC do Calebe é: " + ImcCalebe);
+
+print("O IMC do meu amigo é: " + ImcAmigo);
+
+print("As Somas dos IMCs é: " + (ImcCalebe + ImcAmigo));
+*/
+
+var nome = prompt("Qual o seu nome? ")
+var alturaInformada = prompt(nome + " informe a sua altura...");
+var pesoInformado = prompt(nome + " informe o seu peso");
+
+var imc = IMC(pesoInformado, alturaInformada);
+
+print(nome + " seu IMC é: " + imc);
+
+
+
+</script>
